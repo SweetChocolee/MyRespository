@@ -1,0 +1,158 @@
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout
+            android:id="@+id/rel_img_login"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/bg_login_img" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_login_blank"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rel_img_login" />
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="160dp"
+            android:layout_toRightOf="@id/txt_login_blank"
+            android:background="@drawable/bg_relative" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rel_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/txt_id"
+                        style="@style/font_login_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/txt_id" />
+
+                    <EditText
+                        android:id="@+id/edit_id"
+                        style="@style/font_login_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/txt_id"
+                        android:hint="@string/hint_id"
+                        android:inputType="text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/txt_password"
+                        style="@style/font_login_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/txt_password" />
+
+                    <EditText
+                        android:id="@+id/edit_password"
+                        style="@style/font_login_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/txt_password"
+                        android:hint="@string/hint_password"
+                        android:inputType="textPassword" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_btn"
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/check_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:id="@+id/txt_offline"
+                        style="@style/font_login_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/check_off"
+                        android:text="@string/txt_offline" />
+
+                    <TextView
+                        android:id="@+id/txt_rempass"
+                        style="@style/font_login_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/txt_rempass" />
+
+                    <CheckBox
+                        android:id="@+id/check_rempass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/txt_rempass" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_check"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical" >
+
+                    <Button
+                        android:id="@+id/btn_regist"
+                        style="@style/font_login_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/btn_regist" />
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        style="@style/font_login_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/btn_login" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
